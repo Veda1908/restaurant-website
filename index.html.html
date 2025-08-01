@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Velvet Table</title>
   <style>
     :root {
@@ -74,12 +74,6 @@
       padding: 7rem 2rem;
     }
 
-    .hero h1,
-    .hero p,
-    .hero a {
-      text-decoration: none;
-    }
-
     .hero h1 {
       font-size: 3.5rem;
       margin-bottom: 0.5rem;
@@ -148,10 +142,6 @@
     .menu-item h3 {
       margin-bottom: 0.5rem;
       color: var(--primary);
-    }
-
-    .menu-item p {
-      font-size: 0.95rem;
     }
 
     .menu-item span {
@@ -242,7 +232,6 @@
   </style>
 </head>
 <body>
-
   <header>
     <div class="logo">Velvet Table</div>
     <nav id="nav-menu">
@@ -280,27 +269,22 @@
     </div>
   </section>
 
- <section id="gallery">
-  <h2>Ambience & Dishes</h2>
-  <div class="gallery-grid">
-    <!-- Original Dish -->
-    <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&h=500&q=80" alt="Dish 1" />
-
-    <!-- Cheese Pizza -->
-    <img src="https://img-global.cpcdn.com/recipes/79ee57ba5109c8f1/680x781cq80/cheese-pizza-recipe-main-photo.jpg" alt="Cheese Pizza" />
-
-    <!-- Veggie Bowl -->
-    <img src="https://www.simplycleanfood.com/wp-content/uploads/2020/03/Colorful-Veggie-Bowl-Farther-scaled.jpg" alt="Veggie Bowl" />
-  </div>
-</section>
+  <section id="gallery">
+    <h2>Ambience & Dishes</h2>
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&h=500&q=80" alt="Dish 1">
+      <img src="https://img-global.cpcdn.com/recipes/79ee57ba5109c8f1/680x781cq80/cheese-pizza-recipe-main-photo.jpg" alt="Cheese Pizza">
+      <img src="https://www.simplycleanfood.com/wp-content/uploads/2020/03/Colorful-Veggie-Bowl-Farther-scaled.jpg" alt="Veggie Bowl">
+    </div>
+  </section>
 
   <section id="reservation">
     <h2>Reserve a Table</h2>
     <form id="reservation-form">
-      <input type="text" placeholder="Full Name" required />
-      <input type="email" placeholder="Email Address" required />
-      <input type="date" required />
-      <input type="time" required />
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="date" required>
+      <input type="time" required>
       <textarea rows="4" placeholder="Special requests or feedback"></textarea>
       <button type="submit">Confirm Reservation</button>
     </form>
@@ -315,7 +299,7 @@
       document.getElementById('nav-menu').classList.toggle('show');
     }
 
-    document.getElementById('reservation-form').addEventListener('submit', function (e) {
+    document.getElementById('reservation-form').addEventListener('submit', function(e) {
       e.preventDefault();
       alert("Reservation received. We'll get back to you shortly.");
       this.reset();
